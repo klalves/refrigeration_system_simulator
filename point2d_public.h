@@ -29,8 +29,8 @@ int point2d_x_set(p_point2d_t p, float x);
 int point2d_y_set(p_point2d_t p, float y);
 
 /* 2-point operations */
-int point2d_sum(point2d_t p_in1, point2d_t p_in2, p_point2d_t p_out);
-int point2d_mult(point2d_t p_in1, point2d_t p_in2, p_point2d_t p_out);
+int point2d_sum(point2d_t in1, point2d_t in2, p_point2d_t p_out);
+int point2d_mult(point2d_t in1, point2d_t in2, p_point2d_t p_out);
 
 /* Geometric transformations */
 int point2d_translate(p_point2d_t p, float x, float y);
@@ -38,6 +38,6 @@ int point2d_rotate(p_point2d_t p, float theta);
 int point2d_scale(p_point2d_t p, float scale);
 
 /* 2-point metrics */
-int point2d_distance(point2d_t p_in1, point2d_t p_in2, float * distance);
-int point2d_dot_product(point2d_t p_in1, point2d_t p_in2, float * dot_product);
+int point2d_distance(point2d_t in1, point2d_t in2, float * distance);
+int point2d_dot_product(point2d_t in1, point2d_t in2, float * dot_product);
 

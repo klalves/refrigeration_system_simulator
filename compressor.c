@@ -3,7 +3,7 @@
 
 int compressor_create(pp_compressor pp){
 	/* aloca descritor */
-	(*pp) = (pFRAC)malloc(sizeof(compressor_t));
+	(*pp) = (p_compressor)malloc(sizeof(compressor_t));
 	if( (*pp) == NULL)
 		return FRACASSO;
 	/* inicializa as variaveis */
